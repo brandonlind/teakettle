@@ -1,5 +1,4 @@
 # Teakettle Experimental Forest
-=========
 
  The following scrips are to assess the impact of forest management (fire, thinning, and their interaction) on evolutionary processes that affect fitness, such as mating system, effective pollen pools, etc, in a mid-elevational mixed-conifer forest in the central Sierra Nevada mountains of California. 
 
