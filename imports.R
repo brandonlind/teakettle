@@ -45,12 +45,12 @@ install = function(x){
 	cat(sprintf("Installed and loaded %s library", x))
 }
 
-#for (lib in libs){
-#	if(lib %in% rownames(installed.packages()) == FALSE){
-#		install(lib)
-#	}
-#	else {
-#		library(lib,character.only=TRUE)
-#		cat(sprintf("Loaded %s library\n",lib))
-#	}
-#}
+for (lib in libs){
+	if(lib %in% rownames(installed.packages()) == FALSE){
+		install(lib)
+	}
+	else {
+		library(lib,character.only=TRUE)
+		cat(sprintf("Loaded %s library\n",lib))
+	}
+}
