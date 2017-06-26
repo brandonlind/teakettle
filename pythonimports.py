@@ -22,6 +22,13 @@ from shutil import move as mv
 from matplotlib import pyplot as pl
 import matplotlib.dates as mdates
 
+from ipyparallel import Client
+from decimal import Decimal
+from datetime import datetime as dt
+from scipy import stats
+interval = stats.norm.interval
+
+
 def fs(DIR):
     return (sorted([op.join(DIR,f) for f in ls(DIR)]))
 def uni(mylist):
