@@ -1,4 +1,3 @@
-from __future__ import division
 import numpy as np
 import pandas as pd
 from collections import OrderedDict, Counter
@@ -37,3 +36,15 @@ def luni(mylist):
     return (len(uni(mylist)))
 def suni(mylist):
     return(sorted(uni(mylist)))
+def nrow(df):
+    return len(df.index)
+def ncol(df):
+    return len(df.columns)
+def table(lst):
+    c = Counter()
+    for x in lst:
+        c[x] += 1
+    return(c)
+def pkldump(obj,f):
+    with open(f,'wb') as o:
+        pickle.dump(obj,o,protocol=pickle.HIGHEST_PROTOCOL)
